@@ -1,4 +1,5 @@
-'use client'
+"use client"
+
 import Navbar from "@/components/Navbar";
 import { useState, useEffect } from "react";
 import { AiOutlineSortAscending } from "react-icons/ai";
@@ -6,7 +7,7 @@ import { AiOutlineSortDescending } from "react-icons/ai";
 import { MdOutlineArrowLeft } from "react-icons/md";
 import { MdOutlineArrowRight } from "react-icons/md";
 
-const page = () => {
+const Page = () => {
     const [users, setUsers] = useState([]);
     const [isAscending, setIsAscending] = useState(true);
     const [searchQuery, setSearchQuery] = useState("");
@@ -142,4 +143,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
