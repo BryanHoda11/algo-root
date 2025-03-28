@@ -55,10 +55,6 @@ const Page = () => {
         }
     };
 
-    useEffect(() => {
-        console.log("Current Page:", currentPage);
-    }, [currentPage]);
-
     return (
         <>
             <Navbar />
@@ -71,7 +67,7 @@ const Page = () => {
                         <button onClick={sortAscending} className="bg-gray-800 rounded-lg px-5 py-2 cursor-pointer"><AiOutlineSortAscending size={23} /></button>
                         <button onClick={sortDescending} className="bg-gray-800 rounded-lg px-5 py-2 cursor-pointer"><AiOutlineSortDescending size={23} /></button>
                     </div>
-                    <input value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} type="text" className="w- rounded-lg px-5 py-2 bg-gray-800" name="text" placeholder="Search" />
+                    <input value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} type="text" className="rounded-lg px-5 py-2 bg-gray-800" name="text" placeholder="Search" />
 
                 </div>
 
